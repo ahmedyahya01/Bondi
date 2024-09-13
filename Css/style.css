@@ -1,0 +1,203 @@
+:root {
+    --dark-color: #19283F;
+    --green-color: #33D1CC;
+    --red-color: #FF3150;
+    --section-color: #EFF7FA;
+    scroll-padding-top: 76px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green-color);
+}
+
+/* Start Navbar*/
+.navbar {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    padding-inline: 16px;
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+
+/* End Navbar*/
+/* Start Header */
+header.landing {
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+
+/* End Header */
+/* Start Features */
+section.feature .icon-holder {
+    height: 200px;
+}
+
+section.feature .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.feature .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+section.feature .icon-holder .icon {
+    color: var(--green-color);
+}
+
+/* End Features */
+/* Start Our Work */
+section.our-work {
+    background-color: var(--section-color);
+}
+
+section.our-work .my-nav-pills .nav-link {
+    color: black;
+}
+
+section.our-work .my-nav-pills .nav-link.active,
+section.our-work .my-nav-pills .nav-link.active:focus,
+section.our-work .my-nav-pills .nav-link.active:hover {
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+section.our-work .container .image {
+    border: 6px solid white;
+    overflow: hidden;
+}
+
+section.our-work .container .image::before {
+    content: "Application";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    background-color: rgba(51, 209, 204, 80%);
+    font-weight: bold;
+    transition: right 0.6s;
+}
+
+section.our-work .container .image:hover::before {
+    right: 0;
+}
+
+/* End Our Work */
+/* Start Stuff */
+section.stuff p.description {
+    max-width: 500px;
+}
+
+/* End Stuff */
+/* Start Team */
+section.team {
+    background-color: var(--section-color);
+}
+
+section.team .box h4 {
+    background-color: var(--green-color);
+}
+
+/* End Team */
+/* Start Projects */
+section.projects {
+    background-color: var(--dark-color);
+}
+
+/* End Projects */
+/* Start Our Blog */
+@media (min-width: 992px) {
+    section.our-blog p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.our-blog p {
+        font-size: 20px;
+    }
+}
+
+/* End Our Blog */
+/* Start Subscribe */
+section.subscribe input {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+section.subscribe input:focus {
+    outline: none;
+}
+
+section.subscribe input::placeholder {
+    color: white;
+}
+
+/* End Subscribe */
+/* Start Footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .creator-name {
+    color: var(--green-color);
+}
+
+footer .content ul li:first-child a {
+    background-color: #1877F2;
+}
+
+footer .content ul li:nth-child(2) a {
+    background-color: #1DA1F2;
+}
+
+footer .content ul li:nth-child(3) a {
+    background-color: #0077B5;
+}
+
+footer .content ul li:last-child a {
+    background-color: #FF0000;
+}
+
+/* Start Footer */
